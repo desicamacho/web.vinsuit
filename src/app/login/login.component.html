@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VINSUIT - Login</title>
+		<script src="https://kit.fontawesome.com/473a1862d9.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	</head>
+	<body>
+		<div class="middle-box text-center loginscreen animated fadeInDown">
+			<div class="jtx-logo-login">
+				<img src="./dist/img/logo_3000x800.svg" />
+			</div>
+			<form class="m-t" role="form" action="#">
+				<div class="form-group">
+					<input id="userLogin" name="userLogin" type="text" class="form-control" placeholder="Nombre de usuario" ngModel  required/>
+				</div>
+				<div class="form-group">
+					<input id="userPassword" name="userPassword" type="password" class="form-control" placeholder="Contraseña"  ngModel required/>
+				</div>
+				<button class="btn btn-finalized block full-width m-b" id="buttonLoading">
+					<span>Iniciar sesión</span>
+					<i class="fa fa-circle-o-notch fa-spin iconLoading" style="display: none"></i>
+				</button>
+				<input type="hidden" class="jtx-hidden" id="reCaptchaToken" name="reCaptchaToken" />
+			</form>
+		</div>
+		<div id="maintenance" class="text-center" style="display:none;">
+			<h2>VINSUIT ahora mismo se encuentra en mantenimiento.</h2>
+			<h3>Volveremos lo antes posible. Disculpa las molestias.</h3>
+		</div>
+		<p class="m-t text-center"> <small>VINSUIT &copy; 2022</small> </p>
+	</body>
+
+	<!-- reCaptcha v3 -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6LeRNFUeAAAAAMZ70362llCYnLPLUQtQfayYY57_"></script>
+</html>
